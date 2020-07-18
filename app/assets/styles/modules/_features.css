@@ -4,18 +4,48 @@
     margin-top: 23px;
 
     &__title {
-        font-size: $fontTitleSmall;
+        margin: 20px 0;
+        padding: 0;
+
+        font-size: $font18;
         color: $colorTitle;
+
+        @mixin atSmall {
+            font-size: $font20;
+        }
+        
+        @mixin atMedium {
+            font-size: $font32;
+        }
     }
 
     &__subtitle{
-        font-size: $fontGeralSmall;
+        margin: 0;
+        padding: 0;
+    
+        font-size: $font12;
         color: $colorSubtitle;
+
+        @mixin atSmall {
+            font-size: $font14;
+        }
+
+        @mixin atMedium {
+            font-size: $font20;
+        }
     }
 
     &__descriptions {
-        font-size: $fontGeralSmall;
+        font-size: $font12;
         color: $colorGeral;
+
+        @mixin atSmall {
+            font-size: $font14;
+        }
+
+        @mixin atMedium {
+            font-size: $font20;
+        }
     }
 
     &__img {
