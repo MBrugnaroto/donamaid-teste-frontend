@@ -1,0 +1,171 @@
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99999;
+    background: rgba(#5C5C5C, 0.49);
+
+
+    &__container {
+        position: absolute;
+        width: 75%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 1px solid black;
+        border-radius: 40px;
+        background-color: $colorBackgroudModal;
+
+        padding: 30px 18px 0;
+
+        font-size: $font12;
+        text-align: center;
+
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+        
+        a {
+            text-decoration: none;
+        }
+
+        @mixin atSmall {
+            font-size: $font14;
+        }
+
+        @mixin atMedium {
+            font-size: $font20;
+            width: 50%;
+        }
+
+        @mixin atLarge {
+            width: 30%;
+        }
+    }
+
+    &__icon {
+        width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixin atSmall {
+            width: 200px;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        background-color: white;
+        margin: 0 auto;
+        margin: 0 auto;
+
+        div:not(:last-child) {
+            padding-bottom: 20px;
+        }
+        
+        div:last-child {
+            padding-bottom: 10px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        input {
+            font-size: $font12; 
+        }
+
+        @mixin atSmall {
+
+            div:not(:last-child) {
+                padding-bottom: 25px;
+            }
+            
+            div:last-child {
+                padding-bottom: 15px;
+            }
+
+            input {
+                font-size: $font14; 
+            }
+        }
+
+        @mixin atMedium {
+
+            div:not(:last-child) {
+                padding-bottom: 35px;
+            }
+            
+            div:last-child {
+                padding-bottom: 25px;
+            }
+
+            input {
+                font-size: $font20; 
+            }
+        }
+    }
+
+    &__form--input {
+        margin-left: auto;
+        margin-right: auto;
+
+        input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 100%;
+        margin-top: -19px;
+        padding-top: 35px;
+        
+        @mixin atSmall {
+            margin-top: -22px;
+        }
+    }
+
+    &__form--container {
+        position: relative;
+        padding: 0 20px;
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding: 0 50px;
+        }
+    }
+
+    &__register {
+        text-align: center;
+        margin-top: 20px;
+        padding-bottom: 0;
+        color: $colorSubtitle;
+        @mixin atSmall {
+            margin-top: 25px;
+        }
+
+        @mixin atMedium {
+            margin-top: 40px;
+        }
+    }
+
+    &--on{
+        display: block;
+        z-index: 99999;
+    }
+
+    @keyframes animatetop {
+        from {top: -300px; opacity:0}
+        to {top:50%; opacity:1}
+    }
+}
