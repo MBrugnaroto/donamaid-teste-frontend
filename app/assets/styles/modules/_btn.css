@@ -1,10 +1,45 @@
 .btn {
+    position: relative;
     width: 100%;
-    border: none;
-    border-radius: 25px;
-    padding: 16px 26px;
-    background-color: $colorButton;
-    font-size: $fontButtonSmall;
-    text-transform: uppercase;
-    color: white;
+
+    &__features {
+        width: 100%;
+        border: none;
+        border-radius: 25px;
+        padding: 16px 26px;
+        background-color: $colorButton;
+        font-size: $font16;
+        text-transform: uppercase;
+        color: white;
+
+        @mixin atMedium {
+            width: auto;
+            font-size: $font20;
+        }
+    }
+
+    &__features--centered {
+        text-align: center;
+    }
+
+    &__features--square {
+        width: auto;
+        border-radius: 5px;
+        text-transform: lowercase;
+    }
+
+    &__features--square--centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    &__features--square--size {
+        padding: 10px 15px;
+    }
+
+    &__spacing-bottom {
+        margin-bottom: 20px;
+    }
+  
 }
