@@ -1,0 +1,8 @@
+.page-section {
+    padding: 0 0.625rem;
+    overflow-y: visible;
+
+    &--pink {
+        background: $colorHeader;
+    }
+}

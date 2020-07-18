@@ -1,0 +1,36 @@
+.features {
+    position: relative;
+    width: 100%;
+    margin-top: 23px;
+
+    &__title {
+        font-size: $fontTitleSmall;
+        color: $colorTitle;
+    }
+
+    &__subtitle{
+        font-size: $fontGeralSmall;
+        color: $colorSubtitle;
+    }
+
+    &__descriptions {
+        font-size: $fontGeralSmall;
+        color: $colorGeral;
+    }
+
+    &__img {
+        max-width: 122px;
+        height: 122px;
+    }
+
+    &__img--round {
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    }
+
+    &__spacing--section {
+        padding-top: 17px;
+    }
+}

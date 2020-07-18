@@ -1,0 +1,10 @@
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 16px 26px;
+    background-color: $colorButton;
+    font-size: $fontButtonSmall;
+    text-transform: uppercase;
+    color: white;
+}

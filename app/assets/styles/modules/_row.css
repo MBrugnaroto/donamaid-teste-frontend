@@ -1,0 +1,16 @@
+.row {
+    @mixin clearfix{};
+
+    &--small-gutters {
+        margin-right: 0px;
+    }
+   
+    &--small-gutters > div {
+        padding-right: 10px;
+    }
+    
+    &--6 {
+        float: left;
+        width: 50%;
+    }
+}
