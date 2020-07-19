@@ -38,8 +38,20 @@
         padding: 10px 15px;
     }
 
-    &__spacing-bottom {
+    &__square--spacing {
         margin-bottom: 20px;
     }
+
+    &__spacing {
+        margin-top: 20px;
+        padding-bottom: 10px;
+
+        @mixin atLarge {
+            position: absolute;
+            width: 98%;
+            margin-top: 30vw;
+        }
+    }
+    
   
 }

@@ -13,4 +13,12 @@
         float: left;
         width: 50%;
     }
+
+    @mixin atLarge {
+        &--large-6 {
+            float: left;
+            width: 50%;
+            clear: none;
+        }
+    }
 }

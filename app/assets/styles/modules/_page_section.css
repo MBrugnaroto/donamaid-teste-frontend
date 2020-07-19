@@ -4,5 +4,10 @@
 
     &--pink {
         background: $colorHeader;
+
+        @mixin atLarge {
+            background: linear-gradient(-10deg, white 0%, white, 50%, $colorHeader 0%, $colorHeader 100%);
+        }
+        
     }
 }
