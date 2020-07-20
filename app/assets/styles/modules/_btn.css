@@ -1,10 +1,9 @@
 .btn {
     position: relative;
-    width: 100%;
     border: none;
     cursor: pointer;
     outline-style: none;
-    z-index: 99999;
+
     &__features {
         width: 100%;
         border: none;
@@ -21,6 +20,11 @@
         @mixin atMedium {
             width: auto;
             font-size: $font20;
+        }
+
+        @mixin atLarge {
+            width: auto;
+            font-size: $font16;
         }
     }
 
@@ -55,6 +59,10 @@
         @mixin atLarge {
             position: absolute;
             width: 98%;
+            margin-top: 40vw;
+        }
+
+        @mixin atLargeX {
             margin-top: 30vw;
         }
     }
