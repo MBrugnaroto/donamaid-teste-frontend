@@ -98,11 +98,16 @@
 
     &__list--pro {
         height: 200px;
-        background-color: grey;
+        background-color: $colorBackgroudList;
         border-radius: 25px;
-        padding-top: 5px;
+ 
         margin-top: 40px;
+        overflow: hidden;
+        z-index: 99999;
 
+        ul {
+            margin-top: 0;
+        }
         @mixin atLarge {
             position: absolute;
             top: 50%;
@@ -111,13 +116,31 @@
             height: 400px;
             margin-bottom: 20px;
         }
-       
     }
+
+    &__list--pro--container {
+        width: 100%;
+        padding-left: 10px;
+        background-color: rgba(0,0,0, 0.1);
+        margin-bottom: 5px;
+        color:#FF1493;
+  
+        font-size: $font20;
+
+        a {
+            margin-bottom: 5px;
+        }
+
+        
+    }
+
 
     &__list--part {
         p:nth-child(n) {
            color: $colorHeader;
         }
     }
+
+  
  
 }

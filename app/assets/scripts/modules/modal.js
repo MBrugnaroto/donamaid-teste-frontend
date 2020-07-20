@@ -1,13 +1,15 @@
 class modal {
     constructor () {
-        this.login = document.querySelector(".btn__login");
+        this.hire         = document.querySelector("#hire");
+        this.valueHire    =  document.getElementById("hire");
         this.contentModal = document.querySelector(".modal");
-        this.body = document.querySelector("body");
+        this.body         = document.querySelector("body");
         this.events();
+       
     }
 
     events() {
-        this.login.addEventListener("click", () => this.openModal());
+        this.hire.addEventListener("click", () => this.openModal());
     }
 
     openModal() {

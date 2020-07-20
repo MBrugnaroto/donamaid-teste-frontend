@@ -1,7 +1,10 @@
 .btn {
     position: relative;
     width: 100%;
-
+    border: none;
+    cursor: pointer;
+    outline-style: none;
+    z-index: 99999;
     &__features {
         width: 100%;
         border: none;
@@ -11,7 +14,10 @@
         font-size: $font16;
         text-transform: uppercase;
         color: white;
-
+        outline-style: none;
+        cursor: pointer;
+        
+        
         @mixin atMedium {
             width: auto;
             font-size: $font20;
