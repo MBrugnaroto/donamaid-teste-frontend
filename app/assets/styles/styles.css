@@ -4,6 +4,7 @@
 @import 'base/_global';
 @import 'modules/_page_section';
 @import 'modules/_header';
+@import 'modules/_carousel-vertical.min';
 @import 'modules/_features';
 @import 'modules/_row';
 @import 'modules/_btn.css';

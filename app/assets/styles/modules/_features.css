@@ -97,50 +97,49 @@
     }
 
     &__list--pro {
-        height: 200px;
+        height: 400px;
         background-color: $colorBackgroudList;
         border-radius: 25px;
- 
+        padding: 10px;
         margin-top: 40px;
         overflow: hidden;
-        z-index: 99999;
 
-        ul {
-            margin-top: 0;
-        }
         @mixin atLarge {
             position: absolute;
             top: 50%;
             left: 66%;
             width: 400px;
-            height: 400px;
+            height: 35vw;
+            margin-bottom: 20px;
+        }
+
+        @mixin atLargeX {
+            top: 50%;
+            width: 400px;
+            height: 25vw;
             margin-bottom: 20px;
         }
     }
 
-    &__list--pro--container {
-        width: 100%;
-        padding-left: 10px;
-        background-color: rgba(0,0,0, 0.1);
-        margin-bottom: 5px;
-        color:#FF1493;
-  
-        font-size: $font20;
+    &__list--pro--hover {
+        cursor: pointer;
+        text-align: center;
+        font-weight: 400;
 
-        a {
-            margin-bottom: 5px;
-        }
-
-        
+        margin: 0 auto;
+        padding-top: 5px;
+        width: 80%;
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 25px;
+        transform: scale(1.2);
     }
 
+    &__list--pro--hover:hover, &__active{
+        margin: 0 auto;
+        width: 50%;
 
-    &__list--part {
-        p:nth-child(n) {
-           color: $colorHeader;
-        }
+        border-radius: 25px;
+        background-color: $colorHeader;
+        transform: scale(1.6);
     }
-
-  
- 
 }

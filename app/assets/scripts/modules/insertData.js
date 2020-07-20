@@ -7,9 +7,8 @@ class consumeAPI {
         this.hair             = document.querySelector("#hair");
         this.eye              = document.querySelector("#eye");
         this.skin             = document.querySelector("#skin");
-        this.listPro          = document.querySelector("#list");
         this.buttonHire       = document.querySelector("#hire");
-      
+        this.listPro          = document.querySelector(".cv-carousel");
         this.count            = 0;
         this.professionalData;
 
@@ -24,35 +23,28 @@ class consumeAPI {
     
     initialData() {
         this.data.forEach( el => {
-            var novoElem = document.createElement('li')
-            var child1   = document.createElement('button')
-            var child2   = document.createElement('div')
-            //var child3   = document.createElement('p')
+            var child   = document.createElement('div')
             var textname = document.createTextNode(el.name)
 
-            //child3.appendChild(textname)
-            child2.setAttribute('id', ''+this.count)
-            child2.appendChild(textname)
-            child2.classList.add("features__list--pro--container")
-            child1.classList.add("btn")
-            child1.classList.add("btn__list")
-            child1.appendChild(child2)
-            novoElem.appendChild(child1)
+            child.classList.add('item')
+            child.setAttribute('id', ''+this.count)
+            child.classList.add('features__list--pro--hover')
+            child.appendChild(textname)
             
-            this.listPro.appendChild(novoElem)
+            this.listPro.appendChild(child)
             this.count++;
         })
         
     }
 
     setData(el) {
-        if (el.target.tagName == 'DIV') {
+        if (el.target.tagName == 'DIV' && el.target.classList[0] != "cv-stage" && el.target.classList[0] != "cv-item") {
             this.recoverPeople(this.data[el.target.id])
         }
     }
     
     recoverPeople(data) {
-        if (data != undefined) {
+        if (data != null) {
             var year = data.year.slice(0, 4);
 
             this.professionalName.innerHTML = data.name;
@@ -78,7 +70,7 @@ class consumeAPI {
     }
 
     events() {
-        document.addEventListener("click", el => {
+        this.listPro.addEventListener("click", el => {
            this.setData(el)
         });
         
