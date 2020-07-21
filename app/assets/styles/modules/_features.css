@@ -127,14 +127,23 @@
         font-weight: 400;
 
         margin: 0 auto;
-        padding-top: 5px;
         width: 80%;
         background-color: rgba(0,0,0,0.1);
         border-radius: 25px;
         transform: scale(1.2);
     }
 
-    &__list--pro--hover:hover, &__active{
+    &__list--pro--hover:hover {
+        margin: 0 auto;
+        width: 50%;
+
+        border-radius: 25px;
+        background-color: $colorButton;
+        
+        transform: scale(1.6);
+    }
+
+    &__active {
         margin: 0 auto;
         width: 50%;
 
