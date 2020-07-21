@@ -8,8 +8,7 @@ A imagem do perfil a ser exibida fica a sua escolha. Utilize as informações so
 Foco no UI: ao clicar em outro profissional devo ver a tela com as informações sobre ele. 
 Esse repositório deve ser forkado para desenvolvimento do teste pelo candidato e ao final deve ser hospedado no Netlify.
 
-**Endereço para o front no Netlify:**
-    (link aqui a ser preenchido pelo candidato)
+**Endereço para o front no Netlify:** [Netlify](https://mateus-b-donamaid-teste-frontend.netlify.app)
 
 # Telas do layout:
 
