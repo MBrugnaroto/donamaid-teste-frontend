@@ -3,24 +3,19 @@ import axios from "axios";
 class consumeSWAPI {
     constructor (){
         this.collection = []
-        this.https = 'https:'
         this.url = 'https://swapi.dev/api/people/';
         this.nextPage();
     }
 
     nextPage() {
-        if (this.url != null) {
-            var c = this.url + ".";
-            this.url = this.https + c.slice(7, -1);
-
+        if (this.url != null)
             axios.get(this.url).then( response => {
                 var data = response.data.results;
                 this.url = response.data.next;
 
                 this.insert(data)
                 this.nextPage();
-            })
-        }
+        })
     }
 
     insert(data) {
