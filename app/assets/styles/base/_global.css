@@ -1,7 +1,4 @@
 body {
-    position: relative;
-    padding: 0;
-    margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     user-select: none;
     h1 {
@@ -16,4 +13,8 @@ body {
         list-style-type: none;
         margin-left: -40px;
     }
+}
+
+body, html {
+    height: 100%;
 }
